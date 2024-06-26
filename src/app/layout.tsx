@@ -1,3 +1,5 @@
+import { Gotham } from './ui/fonts'
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -5,7 +7,7 @@ export default function RootLayout({
 }>): React.JSX.Element {
   return (
     <html lang='en'>
-      <body>{children}</body>
+      <body className={Gotham.className}>{children}</body>
     </html>
   )
 }
